@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картошка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="script/owl.carousel.min.css">
+    <link rel="stylesheet" href="script/owl.theme.default.min.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="Картошка"></a>
+                </div>
+            <nav class="header-menu">
+                    <ul class="menu-list">
+                        <li class="nav-el"><a href="#prices" class="link" onclick="linkChange()">Цены</a></li>
+                        <li class="nav-el"><a href="#video" class="link" onclick="linkChange()">Видео</a></li>
+                        <li class="nav-el"><a href="#about" class="link" onclick="linkChange()">О нас</a></li>
+                        <li class="nav-el"><a href="#request" class="request" class="link" onclick="linkChange()">Оставить заявку</a></li>
+                    </ul>
+
+                    <div class="menu-links links">
+                        <h2>Картошечка</h2>
+                        <div class="links-soc">
+                            <a href="https://vk.com" class="link-item link-vk" target="_blank"><i class="fab fa-vk"></i></a></li>
+                            <a href="https://facebook.com" class="link-item link-fb" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <a href="https://twitter.com" class="link-item link-tw" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                            <a href="https://instagram.com" class="link-item link-in" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                        </div>
+                    </div>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            </div>
+
+            <div class="brand">
+            <h2 class="brand-name">
+                Ка<br class="brand-dec">рто<br class="brand-dec">шеч<br class="brand-dec">ка
+            </h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="prices" id="prices">
+            <h2 class="heading mb-5">Цены</h2>
+            <div class="owl-carousel owl-theme prices-carousel mx-auto">
+                <div class="prices-card">
+                    <img src="./images/kartoshka-1.png" alt="Kartoshka1">
+                    <p>Столовый картофель<br><span>142 ₽</span></p>
+                </div>
+                <div class="prices-card">
+                    <img src="./images/kartoshka-2.png" alt="Kartoshka1">
+                    <p>Деревенский картофель<br><span>129 ₽</span></p>
+                </div>
+                <div class="prices-card">
+                    <img src="./images/kartoshka-3.png" alt="Kartoshka1">
+                    <p>Домашний картофель<br><span>133 ₽</span></p>
+                </div>
+              </div>
+        </div>
+
+        <div class="video" id="video">
+            <h2 class="heading">Видео</h2>
+            <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="640"
+                height="264"
+                poster=""
+                data-setup="{}">
+            <source src="./images/videoplayback.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+                <p class="vjs-no-js">
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+
+        <div class="about" id="about">
+            <h2 class="heading">О нас</h2>
+
+            <div class="pt-left">
+                <img src="./images/potato-left.png" alt="pt-left">
+            </div>
+
+            <div class="pt-right">
+                <img src="./images/potato-right.png" alt="pt-left">
+            </div>
+            
+
+            <div class="about-wrap">
+                <div class="about-img">
+                    <img src="./images/woman.png" alt="Kartoshka">
+                </div>
+                <div class="about-text">
+                    <p>Если картошка, запеченная в духовке, получается не всегда такой как хочется (сухая или наоборот мокрая, сыроватая внутри, недостаточно удачная по специям) — дайте шанс этому рецепту.</p>
+                        <p>Такая картошечка по-деревенски стабильно получается очень вкусная, хрустящая снаружи и мягкая, как пюрешка внутри, ароматная — в общем пальчики оближешь. Рецепт у меня простой, но с технологическим секретом, который и решает дело.</p>
+                </div>
+            </div>
+            <form class="about-form mx-auto" id="request">
+                <h3>Оставить заявку</h3>
+                <label>
+                    <input type="text" class="form-control mx-auto form-input">
+                    <div class="label-text">Имя</div>
+                </label>
+
+                <label>
+                    <input type="text" class="form-control mx-auto form-input">
+                    <div class="label-text">Номер телефона</div>
+                </label>
+                  
+                <button type="submit">Оставить заявку</button>
+              </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links">
+            <h2>Картошечка</h2>
+            <div class="links-soc">
+                <a href="https://vk.com" class="link-item link-vk" target="_blank"><i class="fab fa-vk"></i></a></li>
+                <a href="https://facebook.com" class="link-item link-fb" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <a href="https://twitter.com" class="link-item link-tw"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                <a href="https://instagram.com" class="link-item link-in"><i class="fab fa-instagram" target="_blank"></i></a></li>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script/jquery.min.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
